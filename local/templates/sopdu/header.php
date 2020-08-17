@@ -14,3 +14,4 @@
 	<?$APPLICATION->ShowPanel();?>
 </div>
 
+test
