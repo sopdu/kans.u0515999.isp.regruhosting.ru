@@ -32,13 +32,19 @@
 					</form>
 					<br>
 					<div class="footitem_title mt-2"><?=GetMessage("sopduFooterSocialNetwork")?></div>
-					<ul class="row p-0 w-75 social_icons">
-						<li class="col"><a href="#"><img src="<?=SITE_TEMPLATE_PATH?>/img/social/insta.svg" alt=""></a></li>
-						<li class="col"><a href="#"><img src="<?=SITE_TEMPLATE_PATH?>/img/social/yt.svg" alt=""></a></li>
-						<li class="col"><a href="#"><img src="<?=SITE_TEMPLATE_PATH?>/img/social/vk.svg" alt=""></a></li>
-						<li class="col"><a href="#"><img src="<?=SITE_TEMPLATE_PATH?>/img/social/fb.svg" alt=""></a></li>
-						<li class="col"><a href="#"><img src="<?=SITE_TEMPLATE_PATH?>/img/social/wa.svg" alt=""></a></li>
-					</ul>
+					<?$APPLICATION->IncludeComponent(
+						"sopdu:solocal.links",
+						".default",
+						array(
+							"COMPONENT_TEMPLATE" => ".default",
+							"instagram" => "Instagram",
+							"youtube" => "Instagram",
+							"vk" => "Instagram",
+							"facebook" => "Instagram",
+							"whatapp" => "Instagram"
+						),
+						false
+					);?>
 				</div>
 				<div class="foot_item col adapt_our">
 					<div class="footitem_title"><?=GetMessage("sopduFooterOurContact")?></div>
