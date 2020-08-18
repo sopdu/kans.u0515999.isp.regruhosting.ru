@@ -10,7 +10,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="foot_item col fixmorefooter">
-					<div class="footitem_title">Еще</div>
+					<div class="footitem_title"><?=GetMessage("sopduFoorerStill")?></div>
 					<div class="footitem_text"><a href="#">О компании</a></div>
 					<div class="footitem_text"><a href="#">Новости</a></div>
 					<div class="footitem_text"><a href="#">Технологии</a></div>
@@ -18,14 +18,14 @@
 					<div class="footitem_text"><a href="#">Контакты</a></div>
 				</div>
 				<div class="foot_item col">
-					<div class="footitem_title">Каталог</div>
+					<div class="footitem_title"><?=GetMessage("sopduFooterCatalog")?></div>
 					<div class="footitem_text"><a href="#">Чертежные принадлежности</a></div>
 					<div class="footitem_text"><a href="#">Офисные принадлежности</a></div>
 					<div class="footitem_text"><a href="#">Школные принадлежности</a></div>
 					<div class="footitem_text"><a href="#">Школные принадлежности</a></div>
 				</div>
 				<div class="foot_item_search col">
-					<div class="footitem_title">Ищешь товар?</div>
+					<div class="footitem_title"><?=GetMessage("sopduFooterLookingForAProduct")?></div>
 					<form class="footer_search" action="#">
 						<input type="text" placeholder="Поиск" name="search" class="footer_input">
 						<button type="submit" class="footer_btn">Найти</button>

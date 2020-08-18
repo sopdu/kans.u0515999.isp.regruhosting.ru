@@ -150,9 +150,7 @@ button:active, button:focus {outline: none;}
 		width: 83px !important;
 		font-family: Intro Book;
 	}
-	.centerheader .col-4 img{
-		max-width: 90%;
-	}
+
 	.colotheadfix{
 		background: #F2F2F2;
 		height: 50px;

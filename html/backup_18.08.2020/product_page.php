@@ -142,7 +142,7 @@
 
 
 
-				<div class="sticky-block" id="stickyscheck">
+				<div class="sticky-block">
 					<div class="stickyfor inner" id="fixed">
 						<div class="price_productp mb-4 adaptation_none">320₽/уп</div>
 						<div class="cart_price_productp d-flex justify-content-center adaptation_none">
@@ -208,9 +208,9 @@
 						sb.css({"paddingTop" : 0});
 					}
 				}
-			});			
+			});
 		</script>
-		
+
 		<!-- same prod -->
 
 		<div class="container">
