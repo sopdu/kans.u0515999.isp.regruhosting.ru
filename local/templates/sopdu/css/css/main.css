@@ -1906,7 +1906,4 @@ button:active, button:focus {outline: none;}
 		color: #D5D7E0 !important;
 		text-align: center !important;
 	}
-
-	.th_item_active a, .activelang{
-		color: #0A2752 !important;
-	}
+	

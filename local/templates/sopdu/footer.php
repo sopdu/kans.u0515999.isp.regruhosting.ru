@@ -26,20 +26,25 @@
 					),
 						false
 					);?>
-					<?/*
-					<div class="footitem_text"><a href="#">О компании</a></div>
-					<div class="footitem_text"><a href="#">Новости</a></div>
-					<div class="footitem_text"><a href="#">Технологии</a></div>
-					<div class="footitem_text"><a href="#">Партнеры</a></div>
-					<div class="footitem_text"><a href="#">Контакты</a></div>
-					*/?>
 				</div>
 				<div class="foot_item col">
 					<div class="footitem_title"><?=GetMessage("sopduFooterCatalog")?></div>
-					<div class="footitem_text"><a href="#">Чертежные принадлежности</a></div>
-					<div class="footitem_text"><a href="#">Офисные принадлежности</a></div>
-					<div class="footitem_text"><a href="#">Школные принадлежности</a></div>
-					<div class="footitem_text"><a href="#">Школные принадлежности</a></div>
+					<?$APPLICATION->IncludeComponent("bitrix:menu", "catalog", Array(
+						"ALLOW_MULTI_SELECT" => "N",	// Разрешить несколько активных пунктов одновременно
+						"CHILD_MENU_TYPE" => "left",	// Тип меню для остальных уровней
+						"DELAY" => "N",	// Откладывать выполнение шаблона меню
+						"MAX_LEVEL" => "1",	// Уровень вложенности меню
+						"MENU_CACHE_GET_VARS" => array(	// Значимые переменные запроса
+							0 => "",
+						),
+						"MENU_CACHE_TIME" => "3600",	// Время кеширования (сек.)
+						"MENU_CACHE_TYPE" => "N",	// Тип кеширования
+						"MENU_CACHE_USE_GROUPS" => "Y",	// Учитывать права доступа
+						"ROOT_MENU_TYPE" => "catalog",	// Тип меню для первого уровня
+						"USE_EXT" => "Y",	// Подключать файлы с именами вида .тип_меню.menu_ext.php
+					),
+						false
+					);?>
 				</div>
 				<div class="foot_item_search col">
 					<div class="footitem_title"><?=GetMessage("sopduFooterLookingForAProduct")?></div>

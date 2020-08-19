@@ -87,23 +87,27 @@
 			</div>
 		</div>
 		<div class="container mt-4">
-			<div class="col-9 row">
-				<a href="/">
-					<img src="<?=SITE_TEMPLATE_PATH?>/img/logo.svg" class="col-4" style="max-width: 35% !important;">
-				</a>
-				<?$APPLICATION->IncludeComponent(
-						"bitrix:catalog.search", "header", Array(
-				
-				),
-					false
-				);?>
-			</div>
-			<div class="col row flex-nowrap mt-2 d-flex" style="justify-content: flex-end;">
-				<button style="border:none; background: #fff;" type="button" data-toggle="modal" data-target="#exampleModal">
-					<a href="#" class="user adaptation_none_header"><img src="img/user.svg" alt=""></a>
-				</button>
-				<span class="basket_num"><img src="img/basket.svg"></span>
-				<span class=" mr-3 bal" >20 020 070 <span id="simvolfix">₽</span></span>
+			<div class="centerheader row flex-nowrap">
+				<div class="col-9 row">
+					<a href="/" class="col-4">
+						<img src="<?=SITE_TEMPLATE_PATH?>/img/logo.svg" />
+					</a>
+					<?$APPLICATION->IncludeComponent(
+							"bitrix:catalog.search", "header", Array(
+					
+					),
+						false
+					);?>
+				</div>
+				<div class="col row flex-nowrap mt-2 d-flex" style="justify-content: flex-end;">
+					<button style="border:none; background: #fff;" type="button" data-toggle="modal" data-target="#exampleModal">
+						<a href="/personal/" class="user adaptation_none_header">
+							<img src="<?=SITE_TEMPLATE_PATH?>/img/user.svg" alt="">
+						</a>
+					</button>
+					<span class="basket_num"><img src="<?=SITE_TEMPLATE_PATH?>/img/basket.svg"></span>
+					<span class=" mr-3 bal" >20 020 070 <span id="simvolfix">₽</span></span>
+				</div>
 			</div>
 		</div>
 		<hr class="mt-3">
